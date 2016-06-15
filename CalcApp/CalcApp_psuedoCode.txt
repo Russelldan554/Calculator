@@ -1,0 +1,81 @@
+calculator APP
+
+Application to run a basic calculator with multiply, subtract, add, divide and calculate totals 
+
+Buttons:
+addButton
+subtractButton
+divideButton
+multiplyButton
+calculateButton
+oneButton
+twoButton
+threeButton
+fourButton
+fiveButton
+sixButton
+sevenButton
+eightButton
+nineButton
+clearAllButton
+zeroButton
+clearCurrentButton
+
+TextFields:
+dispCalcField
+
+Variables:
+String total
+String selection
+double inputOne
+double inputTwo
+
+CalculatorGui Class:
+Main()
+initialize():void
+
+CalculateDriver Class:
+multiply(double one,double two):String total
+divide(double one, double two):String total
+subtract(double one, double two):String total
+add(double one, double two):String total
+
+Psuedo Code:
+initializes variables total, selection, inputOne, and inputTwo.
+take first input from user and hold in inputOne when one of calculate buttons is selected.
+add string of type of calculation(i.e. "multiply" when multiply selected) to var selection
+clear first input from textfield when button selected.
+take second input from user and hold in inputTwo.
+caluclate first and second input when enter button is pressed based on what String var selection holds.
+put end calculation into total.
+display total on textfield.
+
+clear button will reinitializes inputOne, inputTwo, and total to zero.
+
+multiply:return String total(double one, double two) 
+takes two variables passed into function and multiplies them together.
+parse total into string
+returns total of two variables when multiplied.
+
+divide: return String total(double one, double two)
+check second variable is not zero if so pass error message to main.
+takes two variables passed into function and divides them.
+parse double total into string
+return total.
+
+subtract:return String total(double one, double two)
+takes two variables passed into function and subtracts them.
+parse double total into string
+return total.
+
+add:return String total(double one, double two)
+takes two variables passed into function and subtracts them.
+parse double total into string
+return total.
+
+initialize()
+set total to 0
+set inputOne to 0
+set inputTwo to 0
+
+
